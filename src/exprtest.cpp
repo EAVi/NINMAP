@@ -12,7 +12,6 @@ int main(int argc, char* args[])
 	Expression e;
 	e.setRect(r);
 	e.setType(kSInt16Arg);
-	e.setLineNumber(1);
 	if (argc < 2) 
 	{
 		cout << "enter an expression\n";
@@ -27,7 +26,6 @@ int main(int argc, char* args[])
 		e.printData();
 	else
 	{
-		cout << "Error: ";
 		e.printError();
 	}
 	vector<Uint8> tempvec = e.getData();
@@ -36,9 +34,6 @@ int main(int argc, char* args[])
 		cout << "Warning: ";
 		e.printWarning();
 	}
-	for (int i = 0, j = tempvec.size(); i < j; ++i)
-		cout << (int)tempvec[i] << ',';
-	cout << endl;
 
 	return 0;
 }

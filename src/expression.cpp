@@ -160,7 +160,7 @@ void Expression::printData()
 double Expression::factor()
 {
 	double result = 0;
-	if (mString[mIndex] >= '0' && mString[mIndex] <= '9' || mString[mIndex] == '-')
+	if (mString[mIndex] >= '0' && mString[mIndex] <= '9')
 	{
 		result = number();
 	}
@@ -168,17 +168,22 @@ double Expression::factor()
 	{
 		result = name();
 	}
-	else if (mString[mIndex] == '(')
+	else if (mString[mIndex] == '(')//parentheses
 	{
 		mIndex++;// skip (
 		result = sum();
-		if (mString[mIndex++] != ')'
+		if (mString[mIndex] != ')'
 			&& !mError)//throw only on first error
 		{
 			mError = true;
 			mErrorMessage = "expected ')'";
 		}
 		mIndex++;//skip )
+	}
+	else if (mString[mIndex] == '-')//negative numbers
+	{
+		mIndex++;
+		result = -sum();
 	}
 	else if (!mError)
 	{
