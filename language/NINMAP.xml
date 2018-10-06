@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<NotepadPlus>
+	<AutoComplete language="NINMAP">
+	<Environment ignoreCase="no" startFunc="(" stopFunc=")" paramSeparator="," terminal=";" additionalWordChar=""/>
+		<KeyWord name="attribute" func="yes">
+			<Overload retVal="void" descr="level attributes, MUST BE CALLED ONCE PER LEVEL\nAll args are Uint8">
+			<Param name="Width" />
+			<Param name="Height" />
+			<Param name="RED" />
+			<Param name="GREEN" />
+			<Param name="BLUE" />
+			<Param name="SpawnX" />
+			<Param name="SpawnY" />
+			<Param name="SongName" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="background" func="yes">
+			<Overload retVal="void" descr="background object, complete with movement and parallax">
+			<Param name="Texture" />
+			<Param name="X" />
+			<Param name="Y" />
+			<Param name="Depth" />
+			<Param name="float XVel" />
+			<Param name="float YVel" />
+			<Param name="bool tileX" />
+			<Param name="bool tileY" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="beachhill" />
+		<KeyWord name="beanstalk" />
+		<KeyWord name="block" func="yes">
+			<Overload retVal="void" descr="Texure can be name or Uint8 number">
+			<Param name="Texture" />
+			<Param name="X" />
+			<Param name="Y" />
+			<Param name="W" />
+			<Param name="H" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bluesky" />
+		<KeyWord name="cannon" />
+		<KeyWord name="castlehill" />
+		<KeyWord name="castleinterior" />
+		<KeyWord name="castlesky" />
+		<KeyWord name="castlewall" />
+		<KeyWord name="caveenter" />
+		<KeyWord name="caveexit" />
+		<KeyWord name="cloud" />
+		<KeyWord name="demon" />
+		<KeyWord name="dirt" />
+		<KeyWord name="door" func="yes">
+			<Overload retVal="void" descr="Door type, x,y,w,h are the entrance, the rest is the desination">
+			<Param name="X" />
+			<Param name="Y" />
+			<Param name="W" />
+			<Param name="H" />
+			<Param name="LevelNo" />
+			<Param name="X" />
+			<Param name="Y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="e" />
+		<KeyWord name="enemy" func="yes">
+			<Overload retVal="void" descr="Enemy name can be name or Uint8 number">
+			<Param name="Enemy name" />
+			<Param name="X" />
+			<Param name="Y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="false" />
+		<KeyWord name="ghost" />
+		<KeyWord name="grasshills" />
+		<KeyWord name="houses" />
+		<KeyWord name="moonskull" />
+		<KeyWord name="n" />
+		<KeyWord name="ne" />
+		<KeyWord name="nightynight" />
+		<KeyWord name="nw" />
+		<KeyWord name="pirate" />
+		<KeyWord name="redsky" />
+		<KeyWord name="s" />
+		<KeyWord name="sand" />
+		<KeyWord name="se" />
+		<KeyWord name="seasky" />
+		<KeyWord name="skyline" />
+		<KeyWord name="snow" />
+		<KeyWord name="snowmtn" />
+		<KeyWord name="stonebrick" />
+		<KeyWord name="stormclouds" />
+		<KeyWord name="sw" />
+		<KeyWord name="templeinterior" />
+		<KeyWord name="true" />
+		<KeyWord name="updoor" func="yes">
+			<Overload retVal="void" descr="Same as door, but with an added texture">
+			<Param name="X" />
+			<Param name="Y" />
+			<Param name="W" />
+			<Param name="H" />
+			<Param name="LevelNo" />
+			<Param name="X" />
+			<Param name="Y" />
+			<Param name="Texture" />
+			</Overload>
+		</KeyWord>		
+		<KeyWord name="w" />
+	</AutoComplete>
+</NotepadPlus>
