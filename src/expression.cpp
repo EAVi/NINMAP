@@ -52,17 +52,14 @@ vector<Uint8> Expression::getData()
 	{
 		int shift = mArgType - kBinArg0;
 		byte = (Uint8)mData;
-		if (byte != 0)
+		if ((byte != 0) && (byte != 1))
 		{
-			if (byte != 1)
-			{
-				mWarning = true;
-				mWarningMessage = "Numerical value passed to bool";
-				byte = 1;
-			}
-			byte = byte<<shift;
-			result.push_back(byte);
+			mWarning = true;
+			mWarningMessage = "Numerical value passed to bool";
+			byte = 1;
 		}
+		byte = byte<<shift;
+		result.push_back(byte);
 	}
 	//half-byte arguments
 	else if (mArgType == kHalfByteArg0 || mArgType == kHalfByteArg1)
@@ -272,6 +269,13 @@ double Expression::name()
 	
 	//name lookup
 	Uint8 lookup = nameint(sub, mArgType);
+	
+	if (mArgType == kBlockNameArg)//look for block direction argument
+	{
+		if(lookup == 255)//block arguments can contain direction names
+			lookup = nameint(sub, kBlockDirectionArg);
+		else lookup = lookup * 9;//the block sections are a multiple of 9, directions are values 0-8
+	}
 	
 	if (lookup == 255)//nameint function returns 255 on error
 	{

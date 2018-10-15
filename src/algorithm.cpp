@@ -178,8 +178,8 @@ string blockname(const vector<Uint8> & data, int & i)
 		return "";
 	}
 	
-	int block = data[i] / 9;
-	int direction = data[i] % 9;
+	int block = (int)data[i] / 9;
+	int direction = (int)data[i] % 9;
 	s += namestring(block, kBlockNameArg);
 	
 	if (s == "")//if namestring returned error
@@ -191,7 +191,7 @@ string blockname(const vector<Uint8> & data, int & i)
 	if (direction != 0)//the special part about the block string is that it has 2 parts
 	{
 		s += " + ";
-		s += namestring(block, kBlockDirectionArg);
+		s += namestring(direction, kBlockDirectionArg);
 	}
 	
 	++i;
@@ -286,6 +286,8 @@ string datahalfbyte(const vector<Uint8> & data, int & i, const argtype & a)
 	}
 	int dataint = data[i] & mask;
 	++i;
+	if (a == kHalfByteArg1)
+		dataint = dataint >> 4;
 	return to_string(dataint);
 }
 
