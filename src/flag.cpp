@@ -1,5 +1,5 @@
 #include "flag.h"
-
+#include <iostream>
 using namespace std;
 
 Flag::Flag(int argc, char* args[])
@@ -126,6 +126,7 @@ bool Flag::mParseIndex()
 		}
 		else if (mOutputIndex == -1)
 		{
+			
 			mOutputIndex = i;
 		}
 		else//if it's not input, output, or option, it shouldn't be there
@@ -151,7 +152,11 @@ bool Flag::mEvaluateOption()
 	//no option, default to option -CT
 	if (mOptionIndex == -1)
 	{
-		mFileOptions = kCompileInput | kTupleOutput;
+		mFileOptions = kCompileInput | kBinaryOutput;
+		if (mOutputIndex < 0)
+		{
+			mExtendFile();
+		}
 		return true;
 	}
 	
@@ -219,11 +224,10 @@ bool Flag::mEvaluateOption()
 	}
 	
 	//generate an output file string, file extension dependent on the option
-	if (mOutputIndex == -1)
+	if (mOutputIndex < 0)
 	{
 		mExtendFile();
 	}
-	
 	
 	return true;
 }

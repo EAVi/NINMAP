@@ -13,7 +13,7 @@ char helpMessage[]= "\nninmap inputfile (-conversion) (outputfile)"
 	"\n\tB - binary file type"
 	"\n\tC - compile file type, check out the language defined ./language/"
 	"\n\tT - tuple file type"
-	"\n\tIf conversion option is not specified, -CtoT is assumed"//default option will change soon
+	"\n\tIf conversion option is not specified, -CtoB is assumed"//default option will change soon
 	"\n\nsample usage: \"ninmap -CtoB input.txt output.bin\"\n";
 
 int main (int argc, char* args[])

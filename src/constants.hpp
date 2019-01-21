@@ -22,7 +22,7 @@ enum section
 enum bytewidth
 {
 	kAttributeWidth = 8,
-	kBackgroundWidth = 9,
+	kBackgroundWidth = 11,
 	kBlockWidth = 4,
 	kEnemyWidth = 3,
 	kDoorWidth = 7,
@@ -92,8 +92,8 @@ const int BackgroundType[kBackgroundArg] = {
 	kSInt16Arg,//2
 	kSInt16Arg,//3
 	kUInt8Arg,//4
-	kUInt8Arg,//5
-	kUInt8Arg,//6
+	kSubPArg,//5
+	kSubPArg,//6
 	kBinArg1,//7
 	kBinArg0,//8
 };
@@ -176,7 +176,7 @@ char* const kSongName[]={
 	"05"
 };
 
-const int kBackgroundNameSize = 18;
+const int kBackgroundNameSize = 19;
 char* const kBackgroundName[]={
 	"bluesky",
 	"snowmtn",
@@ -195,7 +195,8 @@ char* const kBackgroundName[]={
 	"castlesky",
 	"beanstalk",
 	"houses",
-	"templeinterior"
+	"templeinterior",
+	"wavetex"
 };
 
 const int kBlockNameSize = 4;

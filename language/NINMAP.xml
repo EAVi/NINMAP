@@ -103,5 +103,6 @@
 			</Overload>
 		</KeyWord>		
 		<KeyWord name="w" />
+		<KeyWord name="wavetex" />
 	</AutoComplete>
 </NotepadPlus>
