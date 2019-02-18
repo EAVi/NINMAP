@@ -267,6 +267,7 @@ string datasubp(const vector<Uint8> & data, int & i)
 	
 	float datafloat = (float)data[i];
 	datafloat += (float)data[i+1]/256.f;
+	datafloat = (datafloat > 128) ? (datafloat - 256) : datafloat;
 	
 	i += 2;
 	return to_string(datafloat);

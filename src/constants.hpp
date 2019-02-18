@@ -168,70 +168,70 @@ const char kOperator[] = "/*-+:()";
 
 const int kSongNameSize = 6;
 char* const kSongName[]={
-	"00",
-	"01",
-	"02",
-	"03",
-	"04",
-	"05"
+	(char*)"00",
+	(char*)"01",
+	(char*)"02",
+	(char*)"03",
+	(char*)"04",
+	(char*)"05"
 };
 
 const int kBackgroundNameSize = 19;
 char* const kBackgroundName[]={
-	"bluesky",
-	"snowmtn",
-	"grasshills",
-	"nightynight",
-	"skyline",
-	"redsky",
-	"snow",
-	"castlehill",
-	"castlewall",
-	"stormclouds",
-	"moonskull",
-	"castleinterior",
-	"beachhill",
-	"seasky",
-	"castlesky",
-	"beanstalk",
-	"houses",
-	"templeinterior",
-	"wavetex"
+	(char*)"bluesky",
+	(char*)"snowmtn",
+	(char*)"grasshills",
+	(char*)"nightynight",
+	(char*)"skyline",
+	(char*)"redsky",
+	(char*)"snow",
+	(char*)"castlehill",
+	(char*)"castlewall",
+	(char*)"stormclouds",
+	(char*)"moonskull",
+	(char*)"castleinterior",
+	(char*)"beachhill",
+	(char*)"seasky",
+	(char*)"castlesky",
+	(char*)"beanstalk",
+	(char*)"houses",
+	(char*)"templeinterior",
+	(char*)"wavetex"
 };
 
 const int kBlockNameSize = 4;
 char* const kBlockName[]={
-	"dirt",
-	"sand",
-	"stonebrick",
-	"cloud",
+	(char*)"dirt",
+	(char*)"sand",
+	(char*)"stonebrick",
+	(char*)"cloud",
 };
 
 const int kBlockDirectionSize = 9;
 char* const kBlockDirection[]={
-	"0",
-	"n",
-	"e",
-	"s",
-	"w",
-	"ne",
-	"nw",
-	"sw",
-	"se",
+	(char*)"0",
+	(char*)"n",
+	(char*)"e",
+	(char*)"s",
+	(char*)"w",
+	(char*)"ne",
+	(char*)"nw",
+	(char*)"sw",
+	(char*)"se",
 };
 
 const int kEnemyNameSize = 4;
 char* const kEnemyName[]={
-	"pirate",
-	"ghost",
-	"demon",
-	"cannon",
+	(char*)"pirate",
+	(char*)"ghost",
+	(char*)"demon",
+	(char*)"cannon",
 };
 
 const int kDoorTextureSize = 4;
 char* const kDoorTexture[]={
-	"caveexit",
-	"caveenter",
+	(char*)"caveexit",
+	(char*)"caveenter",
 };
 
 #endif
