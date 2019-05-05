@@ -89,7 +89,10 @@
 		<KeyWord name="stormclouds" />
 		<KeyWord name="sw" />
 		<KeyWord name="templeinterior" />
+		<KeyWord name="traininterior" />
+		<KeyWord name="tree" />
 		<KeyWord name="true" />
+		<KeyWord name="tunnel" />
 		<KeyWord name="updoor" func="yes">
 			<Overload retVal="void" descr="Same as door, but with an added texture">
 			<Param name="X" />
