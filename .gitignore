@@ -3,6 +3,5 @@ NINMAP
 *.obj
 *.exe
 *.zip
-*.nin
 *.bin
 *.tup

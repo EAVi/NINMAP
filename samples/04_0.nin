@@ -1,0 +1,36 @@
+#train level for Ninja v0.9
+
+attribute(35,240/16,255,255,255, 3, 12,2);
+
+background(traininterior,16,112,0,0,0,0,0);#nonmoving train interior
+background(tunnel,0,0,70,-2,0,true,0);#moving tunnel
+
+#blocks##########
+#top layer
+block(train + nw,0,7,0,0); #left
+block(train + n,1,7,15,0);#center
+block(train + n,r+1,7,15,0);#center
+block(train + ne,33,7,0,0);#right
+
+#left wall
+block(train + w,0,8,0,5); #left
+
+#right wall
+block(train + e,33,8,0,3); #right
+
+#bottom layer
+block(train + sw, 0,14,0,0);#left
+block(train + s,1,14,15,0);#center
+block(train + s,r+1,14,15,0);#center
+block(train + se,33,14,0,0);#right
+
+#left segment of another cart
+block(train+nw, 34,7,0,0);
+block(train+w, 34, 8,0,3);
+block(train+sw, 34,14,0,3);
+
+
+#door to the next cart
+door(34,13,2,1,1,3,12);
+
+##TODO add enemies
