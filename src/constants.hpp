@@ -176,7 +176,7 @@ char* const kSongName[]={
 	(char*)"05"
 };
 
-const int kBackgroundNameSize = 19;
+const int kBackgroundNameSize = 22;
 char* const kBackgroundName[]={
 	(char*)"bluesky",
 	(char*)"snowmtn",
@@ -196,15 +196,19 @@ char* const kBackgroundName[]={
 	(char*)"beanstalk",
 	(char*)"houses",
 	(char*)"templeinterior",
-	(char*)"wavetex"
+	(char*)"wavetex",
+	(char*)"traininterior",
+	(char*)"tunnel",
+	(char*)"tree"
 };
 
-const int kBlockNameSize = 4;
+const int kBlockNameSize = 5;
 char* const kBlockName[]={
 	(char*)"dirt",
 	(char*)"sand",
 	(char*)"stonebrick",
 	(char*)"cloud",
+	(char*)"train",
 };
 
 const int kBlockDirectionSize = 9;
