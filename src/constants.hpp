@@ -230,6 +230,7 @@ char* const kEnemyName[]={
 	(char*)"ghost",
 	(char*)"demon",
 	(char*)"cannon",
+	(char*)"samurai",
 };
 
 const int kDoorTextureSize = 4;

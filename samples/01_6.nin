@@ -1,0 +1,9 @@
+attribute(16, 15, 255, 255, 255, 1, 12, 01);
+background(templeinterior, 0, 0, 255, 0.000000, 0.000000, true, true);
+block(stonebrick, 0, 0, 0, 14);
+block(stonebrick, 15, 0, 0, 14);
+block(stonebrick, 1, 14, 13, 0);
+block(stonebrick, 1, 0, 13, 0);
+block(stonebrick, 10, 9, 2, 0);#right platform
+block(stonebrick, 3, 9, 2, 0);#left platform
+enemy(samurai, 13, 12);
